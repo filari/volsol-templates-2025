@@ -1,0 +1,543 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    @apply text-slate-700;
+    font-size: 17px;
+}
+html {
+     scroll-behavior: smooth;
+ }
+
+::-webkit-scrollbar {
+    height: 0px;
+    width: 5px;
+    --tw-bg-opacity: 1;
+    @apply bg-primary-300;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    --tw-bg-opacity: 1;
+    @apply bg-primary-800;
+}
+
+._heading-4xl {
+    @apply text-2xl lg:text-5xl font-bold text-primary-900
+}
+
+._heading-3xl {
+    @apply text-[1.5rem] lg:text-3xl font-bold text-primary-900
+}
+
+._heading-2xl {
+    @apply text-[1rem] lg:text-2xl font-bold text-primary-900
+}
+
+._heading-xl {
+    @apply text-xl lg:text-xl font-bold text-primary-900
+}
+
+._heading-lg {
+    @apply text-lg lg:text-lg font-bold text-primary-900
+}
+
+._heading-base {
+    @apply text-2xl lg:text-5xl font-bold text-primary-900
+}
+
+.owl-carousel .owl-item img.not-apply-owl-img {
+    @apply w-auto;
+}
+
+.owl-carousel.height-full .owl-stage-outer,.owl-carousel.height-full .owl-stage-outer *{
+    @apply h-full;
+}
+
+.overlap-dots.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: -28px;
+    position: relative;
+}
+
+.overlap-dots.owl-theme .owl-dots .owl-dot.active span, .overlap-dots.owl-theme .owl-dots .owl-dot:hover span {
+    background: #186447 !important;
+}
+/*form*/
+.form-control {
+    @apply py-1.5 px-2 border border-gray-200 rounded-lg w-full;
+}
+
+.form-control.form-control-lg {
+    @apply text-lg px-5;
+}
+
+._search-input {
+    @apply border-transparent w-full px-5 py-1.5 h-12 focus:border-transparent focus:shadow-none;
+}
+
+._search-input-lg {
+    @apply border-transparent w-full px-5 py-1.5 h-14 focus:border-transparent focus:shadow-none;
+}
+
+._search-input:focus {
+    --tw-ring-color: transparent;
+    outline: none;
+}
+
+._search-btn {
+    @apply right-2 px-5 py-1.5 h-12 rounded-lg bg-primary-800 text-white;
+}
+
+._search-btn-lg {
+    @apply right-2 px-5 py-1.5 h-14 rounded-lg bg-primary-800 text-white;
+}
+
+
+/*Dropdown*/
+
+._dropdown {
+    @apply transition-all border-x-2 border-transparent;
+}
+
+._dropdown-toggle {
+    @apply flex items-center justify-center gap-1;
+}
+
+._dropdown-toggle:after {
+    content: "\f282";
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+._dropdown:hover {
+    @apply transition-all border-x-2 border-x-gray-200;
+}
+
+._dropdown-menu {
+    @apply opacity-0 hidden absolute border-t border-t-gray-200 w-full border-x border-x-gray-200 shadow-xl p-3 bg-white left-0 top-full transition-all scale-50;
+}
+
+._dropdown:hover ._dropdown-menu {
+    @apply opacity-100 scale-100 z-0 block;
+}
+
+._dropdown:hover ._dropdown-toggle {
+    @apply text-primary-700;
+}
+
+._dropdown:hover ._dropdown-toggle:after {
+    transform: rotate(180deg);
+}
+
+._listing-child-with-bg a {
+    @apply bg-gray-100 rounded-full inline-flex py-1 px-2;
+}
+
+
+/*Modal*/
+.modal {
+    display: none;
+}
+
+.modal-active {
+    display: block;
+}
+
+.backdrop {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+
+.modal-panel {
+    opacity: 0;
+    transform: translateY(4rem) scale(0.95);
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+
+.modal-panel-leaving {
+    opacity: 0;
+    transform: translateY(4rem) scale(0.95);
+    transition: opacity 0.1s ease-in, transform 0.2s ease-in;
+}
+
+
+.modal-active .backdrop {
+    opacity: 1;
+}
+
+.modal-active .modal-panel {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+
+/*filters*/
+
+._filter-inputs input[type="checkbox"] {
+    @apply border border-gray-400 w-4 h-4 rounded;
+}
+
+
+.cs-select-none * {
+    @apply select-none;
+}
+
+.cs-navbar-tabs .cs-nav-tab-link {
+    @apply cursor-pointer select-none max-w-[100px] lg:max-w-[120px] w-full text-center fill-gray-600 hover:bg-primary-100 hover:fill-primary-600 transition-all hover:border-primary-600 border-2 shadow-none hover:shadow-xl border-primary-50 rounded-xl flex items-center justify-center p-2 space-y-2;
+}
+
+.cs-navbar-tabs .cs-nav-tab-link.active-tab {
+    @apply fill-primary-600 transition-all border-primary-600 bg-primary-100 ;
+}
+
+
+._cs-checkbox-col {
+    @apply relative;
+}
+
+._cs-checkbox-col input {
+    @apply opacity-0 w-0 h-0 absolute -z-10;
+}
+
+._cs-checkbox-col label.cs-checkbox-label {
+    @apply cursor-pointer flex items-center transition-all justify-center bg-white border-2 border-gray-100 hover:border-primary-600 px-3 py-2 rounded-full hover:text-gray-900 font-semibold;
+}
+
+._cs-checkbox-col input:checked + label {
+    @apply border-primary-600 text-gray-900;
+}
+
+._cs-checkbox-col label::after {
+    @apply w-4 h-4 ms-1;
+    --tw-content: '';
+    content: var(--tw-content);
+}
+
+._cs-checkbox-col input:checked + label::after {
+    @apply relative flex items-center justify-center rounded-full bg-green-600 text-white w-4 h-4 ms-1;
+    --tw-content: '✓';
+    content: var(--tw-content);
+}
+
+
+/*Other css*/
+
+.cs_container {
+    @apply max-w-[1472px] px-4 lg:px-10 w-full h-full  mx-auto;
+}
+
+/*Form*/
+
+._fialri_form-control {
+    @apply w-full px-4 py-3 rounded-lg text-primary-900;
+}
+
+._fialri_form-control-btn {
+    @apply px-4 py-3 rounded-lg text-primary-900;
+}
+
+._checked-box-custom input + label {
+    @apply border-gray-300 relative block cursor-pointer rounded-lg border-2 bg-white px-6 py-4 shadow-sm focus:outline-none sm:flex sm:justify-between;
+}
+
+._checked-box-custom input:checked + label {
+    @apply border-primary-600 shadow;
+}
+
+._nonchecked-card {
+    @apply border-gray-300 relative block cursor-pointer rounded-lg border-2 bg-white px-6 py-4 focus:outline-none sm:flex sm:justify-between;
+}
+
+._nonchecked-card.active {
+    @apply border-primary-600 shadow;
+}
+
+
+/*default tags*/
+
+._default-tags-properties ol,
+._default-tags-properties ul {
+    display: block;
+    -webkit-margin-before: 1em;
+    margin-block-start: 1em;
+    -webkit-margin-after: 1em;
+    margin-block-end: 1em;
+    -webkit-margin-start: 0px;
+    margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+    margin-inline-end: 0px;
+    -webkit-padding-start: 40px;
+    padding-inline-start: 40px;
+}
+
+._default-tags-properties ul {
+    list-style-type: disc;
+    @apply space-y-2;
+}
+
+._default-tags-properties li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+._default-tags-properties ::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    -moz-text-align-last: start !important;
+    text-align-last: start !important;
+}
+
+._default-tags-properties td,
+._default-tags-properties th {
+    @apply border-2 border-gray-200 px-4 py-2;
+}
+
+._default-tags-properties .h1,._default-tags-properties  h1 {
+    @apply text-3xl font-bold;
+}
+
+._default-tags-properties .h2,._default-tags-properties  h2 {
+    @apply text-2xl font-bold;
+}
+
+._default-tags-properties .h3 ,._default-tags-properties  h3{
+    @apply text-xl font-bold;
+}
+
+._default-tags-properties .h4,._default-tags-properties  h4 {
+    @apply text-lg font-bold;
+}
+
+._default-tags-properties .h5, ._default-tags-properties .h6,._default-tags-properties  h5,._default-tags-properties  h6 {
+    @apply text-base font-bold;
+}
+
+._default-tags-properties p {
+    @apply mb-2;
+}
+
+
+._default-tags-properties-check li {
+    @apply flex relative ps-[25px];
+}
+
+._default-tags-properties-check li::before {
+    left: 0;
+    top: 5px;
+    position: absolute;
+    content: "\f26a";
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*js scroll*/
+
+._js-scroll-li {
+    @apply border-b-4 border-transparent hover:text-gray-800 hover:border-gray-300;
+}
+
+._js-scroll-li.active {
+    @apply text-primary-800 border-primary-600;
+}
+
+
+._tab-nav-link {
+    @apply cursor-pointer text-gray-500 hover:text-gray-700 relative flex-1 bg-white lg:bg-transparent transition-all py-4 px-4 text-center text-base font-medium hover:bg-gray-50 focus:z-10;
+}
+
+
+@layer utilities {
+    ._tab-nav-link svg {
+        @apply fill-gray-500;
+    }
+
+    ._tab-nav-link._current, ._current {
+        @apply text-primary-600;
+    }
+
+    ._tab-nav-link._current svg {
+        @apply fill-primary-600;
+    }
+
+    ._current span[aria-hidden="true"] {
+        @apply bg-primary-600;
+    }
+}
+
+
+/*marguee*/
+
+:root {
+    --color-text: #1b2123;
+    --color-bg: #ffe7e8;
+    --color-bg-accent: rgba(27, 33, 35, 0.15);
+    --size: 250px;
+    --gap: calc(var(--size) / 14);
+    --duration: 60s;
+    --scroll-start: 0;
+    --scroll-end: calc(-100% - var(--gap));
+}
+
+.marquee {
+    display: flex;
+    user-select: none;
+    gap: 10px;
+    padding: 10px;
+    mask-image: linear-gradient(
+            var(--mask-direction, to right),
+            hsl(0 0% 0% / 0),
+            hsl(0 0% 0% / 1) 20%,
+            hsl(0 0% 0% / 1) 80%,
+            hsl(0 0% 0% / 0)
+    );
+}
+
+.marquee__group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    min-width: 100%;
+    animation: scroll-x var(--duration) linear infinite;
+}
+
+.marquee__group > * {
+    @apply bg-white shadow rounded p-3 h-24 w-[140px] flex items-center justify-center relative overflow-hidden;
+}
+
+.marquee__group > * img {
+    @apply w-auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee__group {
+        animation-play-state: paused;
+    }
+}
+
+.marquee--vertical {
+    --mask-direction: to bottom;
+}
+
+.marquee--vertical,
+.marquee--vertical .marquee__group {
+    flex-direction: column;
+}
+
+.marquee--vertical .marquee__group {
+    animation-name: scroll-y;
+}
+
+.marquee--reverse .marquee__group {
+    animation-direction: reverse;
+    animation-delay: -3s;
+}
+
+@keyframes scroll-x {
+    from {
+        transform: translateX(var(--scroll-start));
+    }
+    to {
+        transform: translateX(var(--scroll-end));
+    }
+}
+
+@keyframes scroll-y {
+    from {
+        transform: translateY(var(--scroll-start));
+    }
+    to {
+        transform: translateY(var(--scroll-end));
+    }
+}
+
+
+._accordion-container .accordion-card {
+    @apply p-3 lg:p-5 bg-white shadow rounded-lg after:content-[''] after:w-14 after:h-14 after:rounded-full after:bg-primary-200 space-y-10;
+}
+
+
+._accordion-container dt {
+    @apply cursor-pointer after:content-["\f282"] after:w-14 after:h-14 after:rounded-full after:bg-white flex items-center justify-center select-none;
+}
+._accordion-container dtx {
+    @apply sticky lg:top-[100px] top-0 bg-white;
+}
+._accordion-container dt:after {
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    transition: all 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform:rotate(-90deg);
+}
+
+._accordion-container .accordion-card dd{
+    @apply hidden px-5;
+}
+
+._accordion-container .accordion-card.active dd{
+    @apply block;
+}
+._accordion-container .accordion-card.active dt {
+   @apply  border-b-2 pb-3;
+}
+._accordion-container .accordion-card.active dt:after {
+    @apply bg-primary-100;
+    transform:rotate(0deg);
+}
+
+
+/*https://www.volunteeringsolutions.com/mission-trips-abroad
+
+Home - banner is pending
+----
+Search Page - done
+----
+Group Volunteer Abroad
+Group Details Page
+----
+Volunteer Abroad - done
+Internship
+School Trips
+----
+Projects Layout
+----
+Extensive Layout like Mission trips
+----
+*/
