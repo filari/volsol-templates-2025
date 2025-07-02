@@ -1,6 +1,6 @@
 <?php
 
-header('location: template-home.php');
+header('location: template-home-new.php');
 
 
 ?>

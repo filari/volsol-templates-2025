@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-	<link rel="stylesheet" type="text/css"  href="assets/css/output.css" type="text/css">
+<!--	<link rel="stylesheet" type="text/css"  href="assets/css/output.css" type="text/css">-->
+	<link rel="stylesheet" type="text/css"  href="assets/css/output-new.css" type="text/css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -25,7 +26,7 @@
                 <div>
                     <button type="button"
                          class="inline-flex justify-center w-full rounded px-2 py-1 bg-primary-900 border border-white text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary-500 focus:ring-primary-500 opacity-80 hover:opacity-100 uppercase text-xs">
-                        <img src="https://www.volunteeringsolutions.com/theme/Vs2022/img/flags/gb.svg" alt="English" class="h-4 mr-1" />
+                        <img src="https://www.volunteeringsolutions.com/beta/libraries/flag-icons/flags/4x3/gb.svg" alt="English" class="h-4 mr-1" />
                         Eng
                         <svg class="-mr-1 ml-1 h-4 w-4 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -36,15 +37,15 @@
                 <div class="hidden group-hover:block z-30 origin-top-right absolute left-0 mt-2 w-20 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
                     <div class="py-1" role="none">
                         <a href="#" class="text-gray-900 group flex items-center px-4 py-2 text-sm hover:bg-gray-50" role="menuitem" tabindex="-1" id="menu-item-0">
-                            <img src="https://www.volunteeringsolutions.com/theme/Vs2022/img/flags/gb.svg" alt="English" class="h-4 mr-1" />
+                            <img src="https://www.volunteeringsolutions.com/beta/libraries/flag-icons/flags/4x3/gb.svg" alt="English" class="h-4 mr-1" />
                             ENG
                         </a>
                         <a href="#" class="text-primary-900 group flex items-center px-4 py-2 text-sm hover:bg-gray-50" role="menuitem" tabindex="-1" id="menu-item-1">
-                            <img src="https://www.volunteeringsolutions.com/theme/Vs2022/img/flags/spain.svg" alt="Spanish Flag" class="h-4 mr-1" />
+                            <img src="https://www.volunteeringsolutions.com/beta/libraries/flag-icons/flags/4x3/spain.svg" alt="Spanish Flag" class="h-4 mr-1" />
                             ESP
                         </a>
                         <a href="#" class="text-primary-900 group flex items-center px-4 py-2 text-sm hover:bg-gray-50" role="menuitem" tabindex="-1" id="menu-item-1">
-                            <img src="https://www.volunteeringsolutions.com/theme/Vs2022/img/flags/portugal.svg" alt="Portugese Flag" class="h-4 mr-1" />
+                            <img src="https://www.volunteeringsolutions.com/beta/libraries/flag-icons/flags/4x3/portugal.svg" alt="Portugese Flag" class="h-4 mr-1" />
                             POR
                         </a>
                     </div>
@@ -68,7 +69,7 @@
 	<nav class="mx-auto flex w-full items-center justify-between px-6 lg:px-8 py-3 lg:py-0" aria-label="Global">
 		<a href="template-home.php" class="-m-1.5">
 			<span class="sr-only">Your Company</span>
-            <img src="https://www.volunteeringsolutions.com/theme/Vs2022/img/logo.svg" alt="Volunteering Solutions Logo" class="h-16">
+            <img src="https://www.volunteeringsolutions.com/beta/themes/custom/filari/assets/images/volsol-logo.svg" alt="Volunteering Solutions Logo" class="h-16">
         </a>
 		<div class="flex lg:hidden">
 			<button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">

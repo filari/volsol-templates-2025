@@ -42,7 +42,7 @@
         </div>
         <div class="bg-gray-50 absolute inset-0 lg:right-0 w-full">
             <img class="aspect-[3/2] object-cover aspect-auto h-full w-full"
-                 src="https://www.volunteeringsolutions.com/asset/uploads/img/page_header_image/root/514_img1_min.jpg"
+                 src="https://www.volunteeringsolutions.com/sites/default/files/header-banner/1341_construction_2.jpg"
                  alt="">
                  <span class="absolute inset-0 bg-gradient-to-t to-slate-900/70 from-slate-900/90 via-slate-900/80"></span>
         </div>
